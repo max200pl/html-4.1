@@ -1,0 +1,63 @@
+<html>
+
+<head>
+     <title>Тестування</title>
+
+     <script language="JavaScript">
+          function grant() {
+               var d = document;
+               var k = 0;
+
+               if ((d.form1.elements[0]).checked) {
+                    k = k + Number(d.form1.elements[0].value)
+               }
+               if ((d.form1.elements[1]).checked) {
+                    k = k + Number(d.form1.elements[1].value)
+               }
+               if ((d.form1.elements[2]).checked) {
+                    k = k + Number(d.form1.elements[2].value)
+               }
+               if ((d.form1.elements[3]).checked) {
+                    k = k + Number(d.form1.elements[3].value)
+               }
+               if ((d.form1.elements[4]).checked) {
+                    k = k + Number(d.form1.elements[4].value)
+               }
+               if ((d.form1.elements[5]).checked) {
+                    k = k + Number(d.form1.elements[5].value)
+               }
+
+               /*додавши перевірку шостого елемента форми*/
+
+               if (d.form1.elements[6].checked) {
+                    k = k + Number(d.form1.elements[6].value)
+               }
+
+               d.form1.output1.value = k;
+
+          }
+     </script>
+</head>
+
+<body>
+     <h3>Анкета для перекладачів</h3>
+     Вкажiть ті мови, якими ви володієте досконало:<br>
+
+     <form name="form1">
+          <input type="checkbox" name="lan" value="100">російська <br>
+          <input type="checkbox" name="lan" value="200">англійська <br>
+          <input type="checkbox" name="lan" value="300">французька <br>
+          <input type="checkbox" name="lan" value="400">німецька <br>
+          <input type="checkbox" name="lan" value="500">китайська <br>
+          <input type="checkbox" name="lan" value="600">японська <br>
+          <input type="checkbox" name="lan" value="1000">українська <br>
+
+          <hr>
+          <input type="text" name="output1" size=10>
+          <input type="button" value="Винагорода" onclick="grant()">
+          <hr>
+          <input type="reset" value="Відмінити">
+     </form>
+</body>
+
+</html>

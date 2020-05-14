@@ -1,0 +1,34 @@
+<html>
+
+<head>
+     <title>Форми</title>
+</head>
+
+<body>
+     <form method="POST" action="mailto:Логін@сервер" enctype="text/plain" name="tests">
+          Прізвище: <input type="text" name="family" size="25" title="Введи тут своє прізвище українською мовою">
+          <br><br>
+          З цього списку вибери район, де ти проживаєш: <br>
+
+          <select>
+               <option name="kvart33">33 квартал
+               <option name="ter">Теремнівський
+               <option name="bal">Балка
+          </select>
+
+          <br><br>
+          Зазнач форму, яку ти складатимеш ДПА: <br>
+          <input type="radio" name="lang" value="українська" checked> Українська <br>
+          <input type="radio" name="lang" value="російська" checked> Російська <br>
+          <input type="radio" name="lang" value="англійська" checked> Англійська <br>
+
+          Вибери іспити: <br>
+          <input type="checkbox" name="exam" value="українська" checked> Українська <br>
+          <input type="checkbox" name="exam" value="фізика" checked> Фізика <br>
+          <input type="checkbox" name="exam" value="математика" checked> Математика <br>
+          <input type="submit" value="Відіслати">
+          <input type="reset" value="Оновити форму">
+     </form>
+</body>
+
+</html>

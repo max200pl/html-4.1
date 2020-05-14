@@ -1,0 +1,71 @@
+<HTML>
+
+<TITLE>Карта гиперссылок</TITLE><!--  Название страницы  -->
+
+<BODY BACKGROUND="Zvezdnoe-nebo.jpg">
+     <!-- тег <CENTER> -- все центрирует по центру -->
+     <CENTER>
+          <TABLE WIDTH=500>
+               <!-- СТРОКА -->
+               <TR>
+                    <td>
+                         <CENTER>
+                              <!-- Ячейка (одна в строке) -->
+                              <!-- тег H1 заголовок -->
+                              <h1 style="color:white">Наведи курсором на созвездие</h1>
+                         </CENTER>
+                    </td>
+               </TR>
+
+               <TR>
+                    <td>
+                         <IMG src="karta_zvezdnogo_neba.png" WIDTH=600 HEIGHT=600 USEMAP="#karta"
+                              ALT="karta_zvezdnogo_neba">
+
+                         <!-- Ограничение размера картинки  (WIDTH=600 HEIGHT=600) -->
+                         <!-- Атрибут  USEMAP="#karta" связывает между собой картинку и карту-изображения, задаваемую с помощью контейнера  <MAP NAME="karta">  -->
+
+                         <MAP NAME="karta">
+                              <!-- атрибут SHAPE="poly" форма области нажатия мышкой может быть разной (круг, многоугольник) мы используем многоугольник "poly" -->
+
+                              <!-- атрибут HREF="./Sozvezdie-Lebed/Sozvezdie-Lebed.html" указывает какая страница будет открываться (HREF="./ -- искать в корне папку Sozvezdie-Lebed/  )  -->
+
+                              <!-- атрибут  COORDS="120,84,180,178,123,229,30,212,66,141,120,84" точки (X-Y),(X-Y),(X-Y) изображения 600x600 как координаты на плоскости  -->
+
+                              <AREA HREF="./Sozvezdie-Lebed/Sozvezdie-Lebed.html" SHAPE="poly"
+                                   COORDS="120,84,180,178,123,229,30,212,66,141,120,84">
+
+                              <AREA HREF="./Sozvezdie-Gerkules/Sozvezdie-Gerkules.html" SHAPE="poly"
+                                   COORDS="30,334,105,315,136,397,50,419,25,376">
+
+                              <AREA HREF="./Sozvezdie-Persey/Sozvezdie-Persey.html" SHAPE="poly"
+                                   COORDS="437,132,524,143,562,168,495,209,401,205">
+
+                              <AREA HREF="./Sozvezdie-Andromedyi/Sozvezdie-Andromedyi.html" SHAPE="poly"
+                                   COORDS="338,27,410,61,441,137,364,97">
+
+                              <AREA HREF="./Bolshaya-Medveditsa/Bolshaya-Medveditsa.html" SHAPE="poly"
+                                   COORDS="213,433,338,419,376,466,279,500,202,491,219,445">
+
+                              <AREA HREF="./Sozvezdie-Volopas/Sozvezdie-Volopas.html" SHAPE="poly"
+                                   COORDS="139,440,180,504,140,540,72,471">
+
+
+                              <AREA HREF="./Sozvezdie-TSefey/Sozvezdie-TSefey.html" SHAPE="poly"
+                                   COORDS="230,160,309,196,310,270,334,244,210,224">
+
+
+                              <AREA HREF="./Sozvezdie-Malaya-Medveditsa/Sozvezdie-Malaya-Medveditsa.html" SHAPE="poly"
+                                   COORDS="238,309,337,288,279,371,230,372">
+
+                              <AREA HREF="./Sozvezdie-Drakon/Sozvezdie-Drakon.html" SHAPE="poly"
+                                   COORDS="129,292,210,262,241,315,219,376,345,402,201,424,124,336,120,276">
+
+                         </MAP>
+                    </td>
+               </TR>
+          </TABLE>
+     </CENTER>
+</BODY>
+
+</HTML>
